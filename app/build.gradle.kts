@@ -7,6 +7,11 @@ android {
     namespace = "com.xuhh.achievement"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+        dataBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.xuhh.achievement"
         minSdk = 24
@@ -33,6 +38,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    sourceSets {
+        getByName("main") {
+            assets {
+                srcDirs("src\\main\\assets", "src\\main\\assets")
+            }
+        }
+    }
 }
 
 dependencies {
@@ -45,4 +57,30 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //by viewModels
+    implementation(libs.androidx.activity.ktx)
+
+    //coroutine
+    implementation(libs.jetbrains.kotlinx.coroutines.core)
+    implementation(libs.jetbrains.kotlinx.coroutines.android)
+
+    //viewModelScope lifecycleScope
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    //dataBinding
+    implementation(libs.lifecycle.compiler)
+
+    //okhttp
+    implementation(libs.okhttp)
+    implementation(libs.logging)
+    //okio
+    implementation(libs.okio)
+
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter)
+    implementation(libs.gson)
+
 }

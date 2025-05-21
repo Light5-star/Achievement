@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Achievement</string>
+    <string name="according">&#xe613;</string>
+    <string name="trend">&#xe60d;</string>
 </resources>

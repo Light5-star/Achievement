@@ -10,6 +10,15 @@ material = "1.10.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 
+kotlinxCoroutines = "1.7.3"
+lifecycle = "2.8.4"
+navigationArg = "2.7.7"
+okhttp = "4.12.0"
+loggingInterceptor = "4.12.0"
+okio = "3.6.0"
+retrofit = "2.9.0"
+gson = "2.10.1"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -20,7 +29,39 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+#coroutine
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+#lifecycle
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+#kapt
+lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycle"}
+#okhttp
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+
+#logging-interceptor
+logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+
+#okio
+okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio" }
+
+#retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+#converter-gson
+converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+#gson
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
+#safeArgs
+safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationArg" }
+#parcelize
+kotlin-parcelize = {id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+#kapt
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
