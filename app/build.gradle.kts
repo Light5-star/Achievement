@@ -83,4 +83,10 @@ dependencies {
     implementation(libs.converter)
     implementation(libs.gson)
 
+    //MPAndroidChart
+    implementation(libs.mpAndroidChart)
+
+    //blurview
+    implementation(libs.blurview)
+
 }

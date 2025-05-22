@@ -18,6 +18,8 @@ loggingInterceptor = "4.12.0"
 okio = "3.6.0"
 retrofit = "2.9.0"
 gson = "2.10.1"
+mpAndroidChart = "3.1.0"
+blurview = "version-2.0.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -54,6 +56,10 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 #gson
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+#MPAndroidChart
+mpAndroidChart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpAndroidChart" }
+#'eightbitlab:blurview:1.6.6'
+blurview = { group = "com.github.Dimezis", name = "BlurView", version.ref = "blurview" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

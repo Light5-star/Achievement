@@ -2,4 +2,8 @@
     <string name="app_name">Achievement</string>
     <string name="according">&#xe613;</string>
     <string name="trend">&#xe60d;</string>
+    <string name="according_title">成长记录</string>
+    <string name="ability_analyze">思维能力分析</string>
+    <string name="according_answer_num_title">累计答题数（个）</string>
+    <string name="according_learning_time_title">每日学习时长（分钟）</string>
 </resources>
